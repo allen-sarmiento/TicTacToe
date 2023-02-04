@@ -7,6 +7,24 @@
     tools:context=".GameActivity">
 
     <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="150dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="casual"
+        android:onClick="resetGame"
+        android:text="Reset"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/botRightBtn"
+        app:layout_constraintTop_toBottomOf="@+id/botMidBtn" />
+
+    <Button
         android:id="@+id/backBtn"
         android:layout_width="130dp"
         android:layout_height="68dp"
@@ -72,10 +90,10 @@
         android:text="Button"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/midLeftBtn"
-        app:layout_constraintEnd_toStartOf="@+id/topMidBtn3" />
+        app:layout_constraintEnd_toStartOf="@+id/topMidBtn" />
 
     <ImageButton
-        android:id="@+id/topMidBtn3"
+        android:id="@+id/topMidBtn"
         android:layout_width="128dp"
         android:layout_height="128dp"
         android:layout_marginBottom="6dp"
@@ -105,7 +123,7 @@
         android:text="Button"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/midRightBtn"
-        app:layout_constraintStart_toEndOf="@+id/topMidBtn3" />
+        app:layout_constraintStart_toEndOf="@+id/topMidBtn" />
 
     <ImageButton
         android:id="@+id/midLeftBtn"
@@ -235,7 +253,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/midMidBtn"
         app:layout_constraintEnd_toEndOf="@+id/topRightBtn"
         app:layout_constraintStart_toStartOf="@+id/topLeftBtn"
-        app:layout_constraintTop_toTopOf="@+id/topMidBtn3"
+        app:layout_constraintTop_toTopOf="@+id/topMidBtn"
         app:srcCompat="@android:drawable/dark_header" />
 
     <ImageView
@@ -258,7 +276,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/botMidBtn"
         app:layout_constraintEnd_toEndOf="@+id/midMidBtn"
         app:layout_constraintStart_toStartOf="@+id/midMidBtn"
-        app:layout_constraintTop_toTopOf="@+id/topMidBtn3"
+        app:layout_constraintTop_toTopOf="@+id/topMidBtn"
         app:srcCompat="@android:drawable/dark_header" />
 
     <ImageView
@@ -270,7 +288,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/botMidBtn"
         app:layout_constraintEnd_toEndOf="@+id/midMidBtn"
         app:layout_constraintStart_toStartOf="@+id/midMidBtn"
-        app:layout_constraintTop_toTopOf="@+id/topMidBtn3"
+        app:layout_constraintTop_toTopOf="@+id/topMidBtn"
         app:srcCompat="@android:drawable/dark_header" />
 
     <ImageView
@@ -282,7 +300,31 @@
         app:layout_constraintBottom_toBottomOf="@+id/botMidBtn"
         app:layout_constraintEnd_toEndOf="@+id/midMidBtn"
         app:layout_constraintStart_toStartOf="@+id/midMidBtn"
-        app:layout_constraintTop_toTopOf="@+id/topMidBtn3"
+        app:layout_constraintTop_toTopOf="@+id/topMidBtn"
+        app:srcCompat="@android:drawable/dark_header" />
+
+    <ImageView
+        android:id="@+id/leftVerStrike"
+        android:layout_width="12dp"
+        android:layout_height="400dp"
+        android:rotation="0"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/botLeftBtn"
+        app:layout_constraintEnd_toEndOf="@+id/midLeftBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topLeftBtn"
+        app:srcCompat="@android:drawable/dark_header" />
+
+    <ImageView
+        android:id="@+id/rightVerStrike"
+        android:layout_width="12dp"
+        android:layout_height="400dp"
+        android:rotation="0"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/botRightBtn"
+        app:layout_constraintEnd_toEndOf="@+id/midRightBtn"
+        app:layout_constraintStart_toStartOf="@+id/midRightBtn"
+        app:layout_constraintTop_toTopOf="@+id/topRightBtn"
         app:srcCompat="@android:drawable/dark_header" />
 
     <ImageView
@@ -294,7 +336,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/botMidBtn"
         app:layout_constraintEnd_toEndOf="@+id/midMidBtn"
         app:layout_constraintStart_toStartOf="@+id/midMidBtn"
-        app:layout_constraintTop_toTopOf="@+id/topMidBtn3"
+        app:layout_constraintTop_toTopOf="@+id/topMidBtn"
         app:srcCompat="@android:drawable/dark_header" />
 
     <ImageView
@@ -307,7 +349,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/botMidBtn"
         app:layout_constraintEnd_toEndOf="@+id/midMidBtn"
         app:layout_constraintStart_toStartOf="@+id/midMidBtn"
-        app:layout_constraintTop_toTopOf="@+id/topMidBtn3"
+        app:layout_constraintTop_toTopOf="@+id/topMidBtn"
         app:srcCompat="@android:drawable/dark_header" />
 
     <ImageView
@@ -320,7 +362,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/botMidBtn"
         app:layout_constraintEnd_toEndOf="@+id/midMidBtn"
         app:layout_constraintStart_toStartOf="@+id/midMidBtn"
-        app:layout_constraintTop_toTopOf="@+id/topMidBtn3"
+        app:layout_constraintTop_toTopOf="@+id/topMidBtn"
         app:srcCompat="@android:drawable/dark_header" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
